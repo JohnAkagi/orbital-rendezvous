@@ -25,10 +25,12 @@ RCS_thrust = 440 #N, (https://en.wikipedia.org/wiki/Apollo_command_and_service_m
 # Physical dimensions of CSM
 
 CSM_mass = 11900 #kg, dry mass (https://en.wikipedia.org/wiki/Apollo_command_and_service_module)
-CSM_mass = 1 #kg, dry mass (https://en.wikipedia.org/wiki/Apollo_command_and_service_module)
 CSM_d = 3.9 #m, diameter of CSM (https://en.wikipedia.org/wiki/Apollo_command_and_service_module)
 CSM_r = CSM_d/2 #m, radius of CSM
 
 #CSM moment of inertia (https://www.hq.nasa.gov/alsj/SNA-8-D-027III-Rev2-CsmLmSpacecraftOperationalDataBook-Volume3-MassProperties.pdf)
 # Since simulation is 2D, we use one of the two higher moments of inertia to spin the craft to change direction of thruster
 CSM_I = 108465 # m^2kg
+
+#Gravitional value for G*Earth mass
+mu = 3.986e14
