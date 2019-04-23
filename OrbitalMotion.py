@@ -92,6 +92,7 @@ def motion(state, t, mass, J, thrust):
     x_accel_g = pos_x*r_dd
     y_accel_g = pos_y*r_dd
     
+    
     #Update derivatives
     state_dot[0] = vel_x
     state_dot[1] = vel_y
